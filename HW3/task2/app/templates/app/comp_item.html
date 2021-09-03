@@ -1,0 +1,12 @@
+{% load static %}
+<div class="col s12 m8">
+    <div class="card">
+      <div class="card-image">
+        <img src="{% static obj.img %}">
+      </div>
+      <div class="card-content">
+        <span class="card-title black-text">{{ obj.title }}</span>
+        {{ obj.text }}
+      </div>
+    </div>
+</div>

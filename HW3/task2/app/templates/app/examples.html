@@ -1,0 +1,16 @@
+{% extends 'app/_base.html' %}
+{% load static %}
+{% block title %}
+Примеры
+{% endblock %}
+{% block act_ex %}class="active"{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col s12">
+    <h1 class="col s12">Каталог компьютеров Apple</h1>
+    {% for item in items %}
+      {% include 'app/comp_item.html'  with obj=item only %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
